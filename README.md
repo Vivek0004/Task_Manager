@@ -11,4 +11,5 @@ This app is equipped with indevice database system. Add all your tasks in one pl
 2. Calendar 🗓 
 3. Notifications
 4. Some AI mashups😉
+
 Made with FLutter 💗
