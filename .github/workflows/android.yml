@@ -1,4 +1,4 @@
-name: Release And Update
+name: Android CI
 on:
   push:
     branches: [ testing ]
