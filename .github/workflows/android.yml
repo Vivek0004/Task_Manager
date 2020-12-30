@@ -39,8 +39,7 @@ jobs:
         with:
           tag_name: ${{ steps.get_version.outputs.VERSION }}
           release_name: Release ${{ steps.get_version.outputs.VERSION }}
-          asset_path: app/build/outputs/apk/debug/app-debug.apk
-          asset_name: Example.apk
-          asset_content_type: application/zip
+          asset_path: pubspec.yaml
+          asset_name: pubspec.yaml
           draft: false
           prerelease: false
