@@ -1,8 +1,11 @@
 name: Release And Update
 on:
   push:
+    branches: [ testing ]
     tags:
       - "v*"
+  pull_request:
+    branches: [ testing ]
 
 jobs:
   apk:
