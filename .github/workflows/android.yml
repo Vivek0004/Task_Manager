@@ -1,15 +1,15 @@
 name: Android CI
 on:
   push:
-    branches: [ testing ]
+    branches: [ master ]
     tags:
       - "v*"
   pull_request:
-    branches: [ testing ]
+    branches: [ master ]
 
 jobs:
-  apk:
-    name: Release APK
+  build:
+    
     runs-on: ubuntu-latest
     steps:
 
