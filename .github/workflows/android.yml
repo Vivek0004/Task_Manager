@@ -23,6 +23,7 @@ jobs:
         with:
           flutter-version: '1.22.5'
       - run: flutter pub get
+      - run: flutter build apk --split-per-abi
       - name: Upload APK
         uses: actions/upload-artifact@v1
         with:
@@ -39,8 +40,8 @@ jobs:
         with:
           tag_name: ${{ steps.get_version.outputs.VERSION }}
           release_name: Release ${{ steps.get_version.outputs.VERSION }}
-          asset_path: pubspec.yaml
-          asset_name: pubspec.yaml
-          asset_content_type: application/yaml
+          asset_path: build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk
+          asset_name: app-release.apk
+          asset_content_type: application/apk
           draft: false
           prerelease: false
