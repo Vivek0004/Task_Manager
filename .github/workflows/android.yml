@@ -41,5 +41,6 @@ jobs:
           release_name: Release ${{ steps.get_version.outputs.VERSION }}
           asset_path: pubspec.yaml
           asset_name: pubspec.yaml
+          asset_content_type: application/yaml
           draft: false
           prerelease: false
